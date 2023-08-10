@@ -9,10 +9,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vue-toastification"],
   },
-  auth: {
-    origin: process.env.ORIGIN as string,
-    enableGlobalAppMiddleware: true,
-  },
+  // auth: {
+  //   origin: process.env.ORIGIN as string,
+  //   enableGlobalAppMiddleware: true,
+  // },
   runtimeConfig: {
     DATABASE_URL: process.env.DATABASE_URL,
     SHADOW_DATABASE_URL: process.env.SHADOW_DATABASE_URL,

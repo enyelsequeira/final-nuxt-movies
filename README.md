@@ -1,63 +1,44 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Movies app
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a project to accomplish a few things
+
+- Learn about vue/Nuxt
+
+  - Syntax
+  - Data fetching
+  - Middlewares
+  - ServerSide
+  - API routes
+  - and More ...
+
+- This will compare a speed between Next and Nuxt [Next](https://github.com/enyelsequeira/tailwind-movies/tree/main)
+  - Will also compare overall DX with it
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
 # pnpm
 pnpm install
-
-# yarn
-yarn install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:3000`
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
 ```
 
-## Production
-
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
+pnpm  build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
+pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

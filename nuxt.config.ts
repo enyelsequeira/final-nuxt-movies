@@ -9,4 +9,8 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vue-toastification"],
   },
+  auth: {
+    origin: process.env.ORIGIN as string,
+    enableGlobalAppMiddleware: true,
+  },
 });

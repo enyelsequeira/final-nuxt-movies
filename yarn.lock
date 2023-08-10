@@ -1144,10 +1144,10 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@sidebase/nuxt-auth@0.6.0-beta.2":
-  version "0.6.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@sidebase/nuxt-auth/-/nuxt-auth-0.6.0-beta.2.tgz#7cb08652d3910cfbd30d9c31ffc14cd7ed3c9778"
-  integrity sha512-T8cm9gx2V/Wn530r0fdI6EfYzsGfOXBIANtK5Dz7VT4PVFnNRy4ifE9zNRnmtYyTMahORyokBOckQyQ2x/JFpQ==
+"@sidebase/nuxt-auth@^0.6.0-beta.4":
+  version "0.6.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@sidebase/nuxt-auth/-/nuxt-auth-0.6.0-beta.4.tgz#daf58a030faa053331f0d2c49cd691153d5f74fb"
+  integrity sha512-efVHYPWQRjaV7R8LkAoXOeji5zEEaZpVFRvD6JUvmqeE/IRKm4X33Tl+3P9DLRtpd5LwskutbUr0GgUP51wApQ==
   dependencies:
     "@nuxt/kit" "^3.4.2"
     "@vueuse/core" "^9.13.0"
@@ -6758,6 +6758,7 @@ wide-align@^1.1.2, wide-align@^1.1.5:
     string-width "^1.0.2 || 2 || 3 || 4"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

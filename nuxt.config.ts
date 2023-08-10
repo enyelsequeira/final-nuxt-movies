@@ -1,4 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
-  devtools: { enabled: true }
-})
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/devtools",
+    "@sidebase/nuxt-auth",
+    "@pinia/nuxt",
+  ],
+  build: {
+    transpile: ["vue-toastification"],
+  },
+});

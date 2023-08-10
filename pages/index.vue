@@ -67,6 +67,7 @@ import { Movie } from "~/types";
 
 const categoryStore = useCategoryStore();
 const { categories, page } = storeToRefs(categoryStore);
+const keys = useRuntimeConfig();
 
 export interface Root {
   page: number;
@@ -79,7 +80,7 @@ const { data, isLoading, suspense } = useQuery<Root>({
   queryKey: ["movies", categories, page],
   queryFn: async () => {
     const data = await axios.get(
-      `${MOVIEAPI}/movie/${categories.value}?page=${page.value}&api_key=${APIKEY}`,
+      `${MOVIEAPI}/movie/${categories.value}?page=${page.value}&api_key=${APIKEY}`
     );
     return data.data;
   },
@@ -87,4 +88,5 @@ const { data, isLoading, suspense } = useQuery<Root>({
 onServerPrefetch(async () => {
   await suspense();
 });
+console.log({ keys });
 </script>

@@ -1,6 +1,6 @@
+import GoogleProvider from "next-auth/providers/google";
 // file: ~/server/api/auth/[...].ts
 import GithubProvider from "next-auth/providers/github";
-// import GoogleProvider from "next-auth/providers/google";
 
 import { NuxtAuthHandler } from "#auth";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
@@ -20,10 +20,10 @@ export default NuxtAuthHandler({
       clientId: useRuntimeConfig().GITHUB_CLIENT_ID,
       clientSecret: useRuntimeConfig().GITHUB_CLIENT_SECRET,
     }),
-    // GoogleProvider({
-    //   clientId: env.GOOGLE_CLIENT_ID,
-    //   clientSecret: env.GOOGLE_CLIENT_SECRET,
-    // }),
+    GoogleProvider({
+      clientId: useRuntimeConfig().GOOGLE_CLIENT_ID,
+      clientSecret: useRuntimeConfig().GOOGLE_CLIENT_SECRET,
+    }),
   ],
   callbacks: {
     // @ts-expect-error

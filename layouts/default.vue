@@ -133,7 +133,7 @@ const { close, isOpen, open } = useDisclosure({
   initialValue: false,
 });
 
-const { signOut, data: userData } = useAuth();
+const { signOut, data: userData } = useSession();
 
 export interface GenresData {
   id: number;

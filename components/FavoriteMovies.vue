@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { useFetchFavorite } from "~/composables/useFetchFavorite";
-const { data: user, status } = useAuth();
+const { data: user, status } = useSession();
 const { data, isLoading } = useFetchFavorite(`${user.value?.user.id}`);
 </script>
 

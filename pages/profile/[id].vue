@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import { titles } from "../../constants/classes";
-const { status } = useAuth();
+const { status } = useSession();
 
 if (status.value === "unauthenticated") {
   navigateTo("/");

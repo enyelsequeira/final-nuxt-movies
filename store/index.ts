@@ -30,7 +30,7 @@ export const useCategoryStore = defineStore("category", {
   },
 });
 
-// make sure to pass the right store definition, `useAuth` in this case.
+// make sure to pass the right store definition, `useSession` in this case.
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useCategoryStore, import.meta.hot));
 }

@@ -47,10 +47,10 @@ import { MovieInfoResponse } from "~/types";
 const APIPOINT = EndPoints.getMovieInfo;
 
 const route = useRoute();
-const { data: user } = useAuth();
+const { data: user } = useSession();
 
 const { data } = await useFetch<MovieInfoResponse>(
-  `${MOVIEAPI}/${APIPOINT}/${route.params.movie}?append_to_response=videos,credits,images&api_key=${APIKEY}`,
+  `${MOVIEAPI}/${APIPOINT}/${route.params.movie}?append_to_response=videos,credits,images&api_key=${APIKEY}`
 );
 
 export interface Result {
@@ -79,7 +79,7 @@ const { data: Recommendations } = await useFetch<Root>(
   `${MOVIEAPI}/movie/${route.params.movie}/recommendations?api_key=${APIKEY}`,
   {
     key: `recommendations-${route.params.movie}`,
-  },
+  }
 );
 const recommendedMovies = Recommendations?.value?.results.slice(0, 12);
 

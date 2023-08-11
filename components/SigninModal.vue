@@ -88,7 +88,7 @@ import { IconX } from "@tabler/icons-vue";
 import { IconBrandGithub } from "@tabler/icons-vue";
 import { IconBrandGoogle } from "@tabler/icons-vue";
 import { titles } from "~/constants/classes";
-const { status, data, signIn, signOut } = useAuth();
+const { status, data, signIn, signOut } = useSession();
 
 console.log({ status: status.value, data: data.value });
 const ButtonIcons =

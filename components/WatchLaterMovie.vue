@@ -28,7 +28,7 @@
 <script setup lang="ts">
 import { useFetchWatchLater } from "~/composables/useFetchFavorite";
 
-const { data: user, status } = useAuth();
+const { data: user, status } = useSession();
 const { data, isLoading } = useFetchWatchLater(`${user.value?.user.id}`);
 </script>
 

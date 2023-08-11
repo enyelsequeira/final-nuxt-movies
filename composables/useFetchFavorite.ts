@@ -16,7 +16,7 @@ const getMoviesLikedByUserId = async (userId: string) => {
 };
 
 export const useFetchFavorite = (userId: string) => {
-  const { data } = useAuth();
+  const { data } = useSession();
   return useQuery({
     queryKey: ["get-movies-liked-by-user-id", data.value?.user.id],
     queryFn: async () => await getMoviesLikedByUserId(userId as string),
@@ -32,7 +32,7 @@ const getWatchLaterMovies = async (userId: string) => {
         params: {
           userId,
         },
-      },
+      }
     );
     return response;
   } catch (error: any) {
@@ -41,7 +41,7 @@ const getWatchLaterMovies = async (userId: string) => {
 };
 
 export const useFetchWatchLater = (userId: string) => {
-  const { data } = useAuth();
+  const { data } = useSession();
   return useQuery({
     queryKey: ["get-watchlater-by-user-id", data.value?.user.id],
     queryFn: async () => await getWatchLaterMovies(userId as string),

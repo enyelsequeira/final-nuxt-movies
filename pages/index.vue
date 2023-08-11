@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Nuxt Movie | {{ categories }}</Title>
+  </Head>
   <div class="px-6 py-2">
     <ul>
       <div
@@ -67,7 +70,6 @@ import { Movie } from "~/types";
 
 const categoryStore = useCategoryStore();
 const { categories, page } = storeToRefs(categoryStore);
-const keys = useRuntimeConfig();
 
 export interface Root {
   page: number;
@@ -88,5 +90,10 @@ const { data, isLoading, suspense } = useQuery<Root>({
 onServerPrefetch(async () => {
   await suspense();
 });
-console.log({ keys });
+
+useSeoMeta({
+  ogTitle: "My Nuxt Movie Site",
+  description: "Movie app built with Nuxt and TypeScript.",
+  ogDescription: "Movie app built with Nuxt and TypeScript.",
+});
 </script>

@@ -51,13 +51,14 @@
 
               <div class="px-4 pb-3">
                 <div>
-                  <div class="mt-4 grid grid-cols-2 gap-3">
-                    <button
+                  <!-- <div class="mt-4 grid grid-cols-2 gap-3"> -->
+                  <div class="mt-4 flex items-center">
+                    <!-- <button
                       @click="async () => await signIn('google')"
                       :class="ButtonIcons"
                     >
                       <IconBrandGoogle />
-                    </button>
+                    </button> -->
 
                     <button
                       @click="async () => await signIn('github')"

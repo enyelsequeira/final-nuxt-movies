@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Head>
+      <Title>Movie Genre | {{ $route.params.genre }}</Title>
+    </Head>
     <section
       class="px-4 sm:px-6 lg:px-8 min-h-screen grid lg:grid-cols-2 xl:grid-cols-4 lg:gap-x-3 lg:gap-y-6 py-2 grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 mt-1"
     >
@@ -62,5 +65,10 @@ definePageMeta({
     name: "genre-transition",
     mode: "out-in",
   },
+});
+useSeoMeta({
+  ogTitle: "Genres Fetched from TMDB API",
+  description: "All the genres fetched from TMDB API",
+  ogDescription: "All the genres fetched from TMDB API",
 });
 </script>

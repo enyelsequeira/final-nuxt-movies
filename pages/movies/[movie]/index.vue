@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Movie | {{ props.title }}</Title>
+  </Head>
   <div class="min-h-screen grid lg:grid-cols-2 lg:gap-x-2">
     <Carrousel :images="images" />
     <MovieInfo v-bind="props" />
@@ -110,6 +113,11 @@ definePageMeta({
   pageTransition: {
     name: "bouncier",
   },
+});
+useSeoMeta({
+  ogTitle: "Movie Information ",
+  description: "Movie information for the movie you are looking for",
+  ogDescription: "Movie information for the movie you are looking for",
 });
 </script>
 

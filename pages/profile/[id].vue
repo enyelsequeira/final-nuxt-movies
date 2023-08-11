@@ -1,8 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col gap-y-3 p-3">
-    <Head>
-      <Title>Profile Page | {{ data?.user?.name || data?.user?.id }} </Title>
-    </Head>
     <section>
       <p :class="`${titles.h2} col-span-4 my-2`">Favorite Movies</p>
       <FavoriteMovies />

@@ -858,7 +858,7 @@
     which "^3.0.1"
     ws "^8.13.0"
 
-"@nuxt/kit@3.6.5", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.4.3", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.5.3", "@nuxt/kit@^3.6.5":
+"@nuxt/kit@3.6.5", "@nuxt/kit@^3.1.2", "@nuxt/kit@^3.4.3", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.5.3", "@nuxt/kit@^3.6.5":
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.6.5.tgz#208777acdc2a09109fbe4209aad736874eb9a3f5"
   integrity sha512-uBI5I2Zx6sk+vRHU+nBmifwxg/nyXCGZ1g5hUKrUfgv1ZfiKB8JkN5T9iRoduDOaqbwM6XSnEl1ja73iloDcrw==
@@ -1144,19 +1144,16 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@sidebase/nuxt-auth@^0.6.0-beta.4":
-  version "0.6.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@sidebase/nuxt-auth/-/nuxt-auth-0.6.0-beta.4.tgz#daf58a030faa053331f0d2c49cd691153d5f74fb"
-  integrity sha512-efVHYPWQRjaV7R8LkAoXOeji5zEEaZpVFRvD6JUvmqeE/IRKm4X33Tl+3P9DLRtpd5LwskutbUr0GgUP51wApQ==
+"@sidebase/nuxt-auth@0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@sidebase/nuxt-auth/-/nuxt-auth-0.4.3.tgz#7854f303001565ad114e5b1c3c8266b1ffe8fa96"
+  integrity sha512-j2YGxErbTlCY+wC8XqKqEKaQC/ULHU8qiGrvyF01K8rnOVIBbR01XJtzkZUgsHaQbMIWeZXe09mnX5J2SbuP3A==
   dependencies:
-    "@nuxt/kit" "^3.4.2"
-    "@vueuse/core" "^9.13.0"
-    defu "^6.1.2"
-    h3 "^1.6.4"
-    knitwork "^1.0.0"
-    nitropack "^2.3.2"
+    "@nuxt/kit" "^3.1.2"
+    defu "^6.1.1"
+    nitropack "^2.1.1"
     requrl "^3.0.2"
-    ufo "^1.1.1"
+    ufo "^1.0.1"
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
@@ -1559,7 +1556,7 @@
     "@vueuse/shared" "10.3.0"
     vue-demi ">=0.14.5"
 
-"@vueuse/core@^9.12.0", "@vueuse/core@^9.13.0":
+"@vueuse/core@^9.12.0":
   version "9.13.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-9.13.0.tgz#2f69e66d1905c1e4eebc249a01759cf88ea00cf4"
   integrity sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==
@@ -2561,7 +2558,7 @@ defu@^3.2.2:
   resolved "https://registry.yarnpkg.com/defu/-/defu-3.2.2.tgz#be20f4cc49b9805d54ee6b610658d53894942e97"
   integrity sha512-8UWj5lNv7HD+kB0e9w77Z7TdQlbUYDVWqITLHNqFIn6khrNHv5WQo38Dcm1f6HeNyZf0U7UbPf6WeZDSdCzGDQ==
 
-defu@^6.0.0, defu@^6.1.2:
+defu@^6.0.0, defu@^6.1.1, defu@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/defu/-/defu-6.1.2.tgz#1217cba167410a1765ba93893c6dbac9ed9d9e5c"
   integrity sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==
@@ -3288,7 +3285,7 @@ gzip-size@^7.0.0:
   dependencies:
     duplexer "^0.1.2"
 
-h3@^1.6.4, h3@^1.6.5, h3@^1.6.6, h3@^1.7.1:
+h3@^1.6.5, h3@^1.6.6, h3@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/h3/-/h3-1.7.1.tgz#fc9328adf5da1d29cbb2d97b81ae3dd9b426463e"
   integrity sha512-A9V2NEDNHet7v1gCg7CMwerSigLi0SRbhTy7C3lGb0N4YKIpPmLDjedTUopqp4dnn7COHfqUjjaz3zbtz4QduA==
@@ -4418,7 +4415,7 @@ next-auth@4.21.1:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
-nitropack@^2.3.2, nitropack@^2.5.2:
+nitropack@^2.1.1, nitropack@^2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/nitropack/-/nitropack-2.5.2.tgz#d5fab06a64ecd15dead5e968783a9a1badebdf71"
   integrity sha512-hXEHY9NJmOOETFFTPCBB9PB0+txoAbU/fB2ovUF6UMRo4ucQZztYnZdX+YSxa6FVz6eONvcxXvf9/9s6t08KWw==
@@ -6303,7 +6300,7 @@ typescript@^5.1.6:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
   integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
-ufo@^1.1.1, ufo@^1.1.2, ufo@^1.2.0:
+ufo@^1.0.1, ufo@^1.1.1, ufo@^1.1.2, ufo@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.2.0.tgz#28d127a087a46729133fdc89cb1358508b3f80ba"
   integrity sha512-RsPyTbqORDNDxqAdQPQBpgqhWle1VcTSou/FraClYlHf6TZnQcGslpLcAphNR+sQW4q5lLWLbOsRlh9j24baQg==

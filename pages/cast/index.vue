@@ -135,7 +135,7 @@ export interface MovieWithCastResult {
   vote_count: number;
 }
 // `/discover/movie?with_cast=${personCode}&page=1&api_key=${APIKEY}`;
-const { data, refresh } = await useFetch<CastType>(
+const { data } = await useFetch<CastType>(
   () =>
     `${MOVIEAPI}/person/${route.query.id}?append_to_response=videos,credits,images&api_key=${APIKEY}`
 );
@@ -145,4 +145,11 @@ const { data: moviesWithCast } = await useFetch<MovieWithCast>(
 );
 
 const moviesBycast = moviesWithCast?.value?.results.slice(0, 12);
+
+definePageMeta({
+  pageTransition: {
+    name: "genre-scale-twist",
+    mode: "out-in",
+  },
+});
 </script>

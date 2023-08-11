@@ -1,25 +1,27 @@
 <template>
-  <section
-    class="px-4 sm:px-6 lg:px-8 min-h-screen grid lg:grid-cols-2 xl:grid-cols-4 lg:gap-x-3 lg:gap-y-6 py-2 grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 mt-1"
-  >
-    <MovieComponent
-      v-for="movie in data?.results"
-      :key="movie.id"
-      :backdrop_path="movie.poster_path"
-      :title="movie.title"
-      :id="movie.id"
-      :poster_path="movie.poster_path"
-      :vote_average="movie.vote_average"
-      :tv-shows="false"
+  <div>
+    <section
+      class="px-4 sm:px-6 lg:px-8 min-h-screen grid lg:grid-cols-2 xl:grid-cols-4 lg:gap-x-3 lg:gap-y-6 py-2 grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 mt-1"
+    >
+      <MovieComponent
+        v-for="movie in data?.results"
+        :key="movie.id"
+        :backdrop_path="movie.poster_path"
+        :title="movie.title"
+        :id="movie.id"
+        :poster_path="movie.poster_path"
+        :vote_average="movie.vote_average"
+        :tv-shows="false"
+      />
+    </section>
+    <Pagination
+      :total-items="data?.total_pages"
+      :current-page="page"
+      :max-pages="3"
+      :page-size="10"
+      @update:currentPage="changePage"
     />
-  </section>
-  <Pagination
-    :total-items="data?.total_pages"
-    :current-page="page"
-    :max-pages="3"
-    :page-size="10"
-    @update:currentPage="changePage"
-  />
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -55,4 +57,10 @@ const changePage = (newPage: number) => {
 
   refresh();
 };
+definePageMeta({
+  pageTransition: {
+    name: "genre-transition",
+    mode: "out-in",
+  },
+});
 </script>

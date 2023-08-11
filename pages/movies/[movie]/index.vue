@@ -105,4 +105,12 @@ const props = {
   userId: user.value?.user.id,
 };
 const images = data?.value?.images?.posters.slice(0, 8);
+
+definePageMeta({
+  pageTransition: {
+    name: "bouncier",
+  },
+});
 </script>
+
+<style scoped></style>

@@ -1,3 +1,5 @@
+import { prisma } from "../../db/client";
+
 import { z } from "zod";
 
 const schema = z.object({

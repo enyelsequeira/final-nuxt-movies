@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { prisma } from "../../db/client";
 
 const schema = z.object({
   movieProps: z.object({

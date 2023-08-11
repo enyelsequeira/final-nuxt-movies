@@ -1,3 +1,5 @@
+import { prisma } from "../../db/client";
+
 export default eventHandler(async (event) => {
   const { userId } = getQuery(event);
   // if (!userId) {

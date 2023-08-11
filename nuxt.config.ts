@@ -26,4 +26,9 @@ export default defineNuxtConfig({
       API_KEY: process.env.API_KEY,
     },
   },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/placeholder.png" }],
+    },
+  },
 });

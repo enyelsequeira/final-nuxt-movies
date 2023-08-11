@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     transpile: ["vue-toastification"],
   },
   auth: {
-    origin: "http://localhost:3000",
+    origin: process.env.ORIGIN,
   },
   runtimeConfig: {
     DATABASE_URL: process.env.DATABASE_URL,
